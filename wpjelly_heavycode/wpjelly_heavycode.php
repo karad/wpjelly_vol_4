@@ -13,14 +13,17 @@ Author URI: http://greative.jp/
 */
 
 function wpjelly_plugin_shortcode_p($content) {
+    //挿入1
     return $content;
 }
 
+//挿入2
 
 function wpjelly_plugin_shortcode_div($content) {
+    //挿入3
     return $content;
 }
 
-
+//挿入4
 
 ?>

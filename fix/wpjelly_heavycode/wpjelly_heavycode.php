@@ -13,14 +13,17 @@ Author URI: http://greative.jp/
 */
 
 function wpjelly_plugin_shortcode_p($atts, $content = null) {
+    //挿入その1
     $content = '<div style="background-color:#f00;"><p>' . $content . '</p></div>';
     return $content;
 }
 
+//挿入その2
 add_shortcode('heavycode_p','wpjelly_plugin_shortcode_p');
 
 
 function wpjelly_plugin_shortcode_div($atts, $content = null) {
+    //挿入その3
     extract( shortcode_atts( array(
         'style' => 'caption',
     ), $atts ) );
@@ -28,6 +31,7 @@ function wpjelly_plugin_shortcode_div($atts, $content = null) {
     return $content;
 }
 
+//挿入その4
 add_shortcode('heavycode_div','wpjelly_plugin_shortcode_div');
 
 
